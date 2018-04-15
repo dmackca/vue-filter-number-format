@@ -78,6 +78,7 @@ if (process.env.NODE_ENV === 'production') {
 
     module.exports.entry = './src/filter-number-format.js';
     module.exports.output.filename = 'vue-filter-number-format.js';
+    module.exports.output.libraryTarget = 'umd';
     module.exports.externals = {
         numeral: 'numeral',
     };
