@@ -74,5 +74,12 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
-  ])
+  ]);
+
+    module.exports.entry = './src/filter-number-format.js';
+    module.exports.output.filename = 'vue-filter-number-format.js';
+    module.exports.externals = {
+        numeral: 'numeral',
+    };
+
 }
