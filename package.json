@@ -5,9 +5,9 @@
   "author": "dmackca <contact@dmack.ca>",
   "homepage": "https://github.com/dmackca/vue-filter-number-format#readme",
   "license": "MIT",
-  "main": "./dist/vue-filter-number-format.js",
+  "main": "dist/vue-filter-number-format.js",
   "files": [
-    "./dist/"
+    "dist/"
   ],
   "repository": {
     "type": "git",
