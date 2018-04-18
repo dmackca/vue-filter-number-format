@@ -1,7 +1,7 @@
 {
   "name": "vue-filter-number-format",
   "description": "Vue.js filter for formatting numbers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "dmackca <contact@dmack.ca>",
   "homepage": "https://github.com/dmackca/vue-filter-number-format#readme",
   "license": "MIT",
