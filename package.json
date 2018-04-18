@@ -3,9 +3,16 @@
   "description": "Vue.js filter for formatting numbers",
   "version": "1.0.1",
   "author": "dmackca <contact@dmack.ca>",
-  "url": "https://github.com/dmackca/vue-filter-number-format",
+  "homepage": "https://github.com/dmackca/vue-filter-number-format#readme",
   "license": "MIT",
   "main": "./dist/vue-filter-number-format.js",
+  "files": [
+    "./dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmackca/vue-filter-number-format"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -19,7 +26,6 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "vue": "^2.5.11",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
@@ -27,6 +33,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "vue": "^2.5.11",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
