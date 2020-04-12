@@ -1,0 +1,31 @@
+name: Node.js yarn CI
+
+on:
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ '**' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: Borales/actions-yarn@v2.1.0
+      with:
+        cmd: install # will run `yarn install` command
+    - uses: Borales/actions-yarn@v2.1.0
+      with:
+        cmd: lint # will run `yarn build` command
+    - uses: Borales/actions-yarn@v2.1.0
+      with:
+        cmd: build # will run `yarn build` command
+    - uses: Borales/actions-yarn@v2.1.0
+      with:
+        cmd: test # will run `yarn test` command
