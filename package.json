@@ -16,7 +16,8 @@
   },
   "scripts": {
     "build": "bili --input src/vue-filter-number-format.js --format esm-min --format cjs-min",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "test": "jest"
   },
   "dependencies": {},
   "browserslist": [
@@ -29,7 +30,9 @@
     "eslint": "^6.2.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-foundryspatial": "2.1.2",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^25.3.0",
+    "numeral": "^2.0.6"
   },
   "peerDependencies": {
     "numeral": "^2.0.0"
