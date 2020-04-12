@@ -12,7 +12,7 @@ Use [version 1 of this package](https://www.npmjs.com/package/vue-filter-number-
 ## Suggested usage
 
 Pass in Numeral to create the formatter function, and register globally as a Vue filter in your main.js-ish file:
-@TODO: update this 
+@TODO: update this
 ```js
 import numeral from 'numeral';
 import numFormat from 'vue-filter-number-format';
@@ -33,22 +33,6 @@ Use anywhere in your .vue files:
 ```
 
 See the [Numeral.js docs](http://numeraljs.com/) for other formatting options.
-
-
-## Development
-
-For convenience, this function is bundled with a VueJS dev site.
-
-``` bash
-# install dependencies
-yarn
-
-# serve example app with hot reload at localhost:8080
-yarn run dev
-
-# build for production with minification
-yarn run build
-```
 
 ## License
 
