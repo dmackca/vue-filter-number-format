@@ -12,7 +12,7 @@ Use [version 1 of this package](https://www.npmjs.com/package/vue-filter-number-
 ## Suggested usage
 
 Pass in Numeral to create the formatter function, and register globally as a Vue filter in your main.js-ish file:
-
+@TODO: update this 
 ```js
 import numeral from 'numeral';
 import numFormat from 'vue-filter-number-format';
