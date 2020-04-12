@@ -5,7 +5,8 @@
   "author": "dmackca <contact@dmack.ca>",
   "homepage": "https://github.com/dmackca/vue-filter-number-format#readme",
   "license": "MIT",
-  "main": "dist/vue-filter-number-format.js",
+  "main": "dist/vue-filter-number-format.min.js",
+  "module": "dist/vue-filter-number-format.esm.min.js",
   "files": [
     "dist/"
   ],
@@ -14,8 +15,9 @@
     "url": "https://github.com/dmackca/vue-filter-number-format"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --host 0.0.0.0",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "bili --input src/vue-filter-number-format.js --format esm-min --format cjs-min",
+    "lint": "eslint ./src",
+    "test": "jest"
   },
   "dependencies": {},
   "browserslist": [
@@ -24,18 +26,13 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.2.0",
-    "file-loader": "^1.1.11",
-    "numeral": "^2.0.6",
-    "vue": "^2.6.10",
-    "vue-loader": "^13.7.3",
-    "vue-template-compiler": "^2.6.10",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.5"
+    "bili": "^4.9.0",
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-foundryspatial": "2.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^25.3.0",
+    "numeral": "^2.0.6"
   },
   "peerDependencies": {
     "numeral": "^2.0.0"
